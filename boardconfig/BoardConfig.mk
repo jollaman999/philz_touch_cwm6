@@ -761,6 +761,13 @@ else ifneq ($(filter $(TARGET_PRODUCT),cm_e970 cm_e973 cm_ls970 cm_e975),)
     TARGET_SCREEN_WIDTH := 768
     BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
 
+#LG Optimus G GEE (gee) - gee
+else ifneq ($(filter $(TARGET_PRODUCT),cm_gee),)
+    TARGET_COMMON_NAME := Optimus G ($(TARGET_PRODUCT))
+    TARGET_SCREEN_HEIGHT := 1280
+    TARGET_SCREEN_WIDTH := 768
+    BRIGHTNESS_SYS_FILE := "/sys/class/leds/lcd-backlight/brightness"
+
 #LG Optimus G Pro (GSM) - e980
 else ifeq ($(TARGET_PRODUCT), cm_e980)
     TARGET_COMMON_NAME := Optimus G Pro
